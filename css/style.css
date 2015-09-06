@@ -6,22 +6,13 @@
 	box-sizing: border-box;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
+	
 
 body  {
 	background: #f24333;
 	color: #fff;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: "Avenir Next" !important;
+
 }
 
 a,
@@ -41,11 +32,6 @@ a:focus {
 	color: #fff;
 	text-decoration: none;
 	opacity: 0.7;
-}
-
-.header a:hover,
-.header a:focus {
-	opacity: 1;
 }
 
 .header h1 {
@@ -80,13 +66,38 @@ a:focus {
 	*display: inline;
 	zoom: 1;
 	}
+
 #container:after {
 	content: "";
 	width: 100%;
 	display: inline-block;
     }
-#item {
-	margin: 4%;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+}
+
+li {
+	padding: 5%;
+
+    display: inline-block;
+}
+
+i {
+	margin-bottom: 20%;
+
+}
+
+
+#item:hover, ul li a:focus {
+ color:#A52925;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+       -o-transition: all 0.4s;
+          transition: all 0.4s;
 }
 
 .bt-menu {
@@ -267,6 +278,8 @@ a:focus {
 .bt-menu ul li a:focus:before  {
 	color: #fff;
 }
+
+
 
 @media screen and (max-height: 31.125em) {
 	.bt-menu ul li a:before {
